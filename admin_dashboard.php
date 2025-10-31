@@ -15,7 +15,7 @@
     <title>Welcome Admin</title>
 </head>
 <body>
-    <h1>Hi, Welcome <?php echo $_SESSION['fullName']; ?> This is Admin Dashboard!</h1>
+    <h1>Hi, Welcome <?php echo $_SESSION['userName']; ?> This is Admin Dashboard!</h1>
     <form action="admin_dashboard.php" method="post">
         <button type="submit" name="logout" onclick="confirm('Are you sure you want to exit?')">Logout</button>
     </form>

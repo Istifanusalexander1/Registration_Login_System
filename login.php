@@ -19,9 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Login</title>
     <link rel="stylesheet" href="login.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
-    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+    <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" data-aos="slide-down" data-aos-duration="2550" >
         <div class="logData">
             <h3>Login</h3>
           
@@ -37,6 +39,11 @@
             <p>Don't have an account? <a href="register.php">Register here</a></p>
         </div>
     </form>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 
