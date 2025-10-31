@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(0, 54, 130);
+    color: blanchedalmond;
+    font-family: sans-serif;
+    font-size: 1cap;
+    padding: 20px;
+}
+
+.div-logout-btn{
+    /* border: solid #af0707; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 90px;
+    padding: 20px 30px 10px 0px;
+}
+
+.logout-btn{
+    position: sticky;
+    top: 100%;
+    padding: 7px 20px;
+    color: antiquewhite;
+    border: none;
+    background-color: rgb(32, 118, 232);
+    border-radius: 5px;
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgb(79, 154, 253);
+}
+
+.calculator{
+    border: none;
+}
