@@ -76,3 +76,24 @@ p, a{
         text-decoration: underline;
     }
 }
+
+@media (max-width: 470px){
+    .regData{
+        width: 300px;
+    }
+    input, select{
+        width: 250px;
+        font-size: 13px;
+        padding: 7px;
+    }
+    button{
+        padding: 10px 70px;
+        font-size: 13px;
+    }
+    p{
+        font-size: 13px;
+    }
+    h3{
+        font-size: 30px;
+    }
+}

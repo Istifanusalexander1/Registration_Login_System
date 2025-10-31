@@ -18,7 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Register</title>
-    <link rel="stylesheet" href="registerss.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <form action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
