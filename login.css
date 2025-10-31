@@ -72,6 +72,21 @@ p, a{
     }
 }
 
+/* @media (max-width: 400px){
+    .logData{
+        width: 100px;
+        margin: 0px;
+        padding: 0px;
+    }
+    h3{
+        color: #0397ec;
+        font-size: 1px;
+    }
+    input{
+        width: 0px;
+    }
+} */
+
 @media (max-width: 470px){
     .logData{
         width: 300px;

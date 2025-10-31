@@ -97,3 +97,18 @@ p, a{
         font-size: 30px;
     }
 }
+
+
+@media (min-width: 600px) and (max-width: 899px){
+    /* Tablet Screen Size */
+}
+
+
+@media (min-width: 900px) and (max-width: 1199px){
+    /* Desktop Screen */
+}
+
+
+@media (min-width: 1200px){
+    /* Large Minintor screen */
+}
