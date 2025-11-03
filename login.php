@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Login</title>
     <link rel="stylesheet" href="login.css">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
     
 </head>
 <body>
@@ -40,7 +40,7 @@
         </div>
     </form>
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> -->
     <script>
         AOS.init();
     </script>

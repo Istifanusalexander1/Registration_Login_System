@@ -2,7 +2,6 @@
     session_start();
 ?>
 
-
 <?php
 
     $userName = $_SESSION['userName'];
@@ -31,7 +30,7 @@
 </head>
 <body>
     <nav>
-        <h1>Hi <?php echo $_SESSION['userName']; ?>, Welcome This is Admin Dashboard!</h1>
+        <h1>Hi <?php echo $_SESSION['userName']; ?>, Welcome <br> This is Admin Dashboard!</h1>
         <form action="admin_dashboard.php" method="post">
             <div class="div-logout-btn">
                 <button class="logout-btn" type="submit" name="logout" onclick="confirm('Are you sure you want to exit?')">Logout</button>
@@ -44,22 +43,22 @@
             <h1>Calculator</h1>
             <input class="display" value="" type="text" readonly>
             <div class="keys">
-                <button onclick="appendToDisplay('+')">+</button>
-                <button onclick="appendToDisplay('7')">7</button>
-                <button onclick="appendToDisplay('8')">8</button>
-                <button onclick="appendToDisplay('9')">9</button>
-                <button onclick="appendToDisplay('-')">-</button>
-                <button onclick="appendToDisplay('4')">4</button>
-                <button onclick="appendToDisplay('5')">5</button>
-                <button onclick="appendToDisplay('6')">6</button>
-                <button onclick="appendToDisplay('*')">*</button>
-                <button onclick="appendToDisplay('1')">1</button>
-                <button onclick="appendToDisplay('2')">2</button>
-                <button onclick="appendToDisplay('3')">3</button>
-                <button onclick="appendToDisplay('.')">.</button>
-                <button onclick="appendToDisplay('0')">0</button>
-                <button onclick="displayResault()">=</button>
-                <button onclick="clearScreen()">C</button>
+                <button class="keys-btn" onclick="appendToDisplay('+')">+</button>
+                <button class="keys-btn" onclick="appendToDisplay('7')">7</button>
+                <button class="keys-btn" onclick="appendToDisplay('8')">8</button>
+                <button class="keys-btn" onclick="appendToDisplay('9')">9</button>
+                <button class="keys-btn" onclick="appendToDisplay('-')">-</button>
+                <button class="keys-btn" onclick="appendToDisplay('4')">4</button>
+                <button class="keys-btn" onclick="appendToDisplay('5')">5</button>
+                <button class="keys-btn" onclick="appendToDisplay('6')">6</button>
+                <button class="keys-btn" onclick="appendToDisplay('*')">*</button>
+                <button class="keys-btn" onclick="appendToDisplay('1')">1</button>
+                <button class="keys-btn" onclick="appendToDisplay('2')">2</button>
+                <button class="keys-btn" onclick="appendToDisplay('3')">3</button>
+                <button class="keys-btn" onclick="appendToDisplay('.')">.</button>
+                <button class="keys-btn" onclick="appendToDisplay('0')">0</button>
+                <button class="keys-btn" onclick="displayResault()">=</button>
+                <button class="keys-btn" onclick="clearScreen()">C</button>
             </div>
         </div>
     </div>
@@ -68,14 +67,34 @@
 <script>
     const display = document.querySelector('.display');
     function appendToDisplay(input){
-        display.value += input;
-    }
-    function displayResault(){
-        display.value = eval(display.value);
+        if (display.value == "Error"){
+            display.value = '';
+            display.value += input;
+        
+        }
+        else{
+            display.value += input;
+        }
     }
     function clearScreen(){
         display.value = '';
     }
+
+
+    function displayResault(){
+        try{
+            if (display.value == ''){
+                console.log('')
+            }else{
+                display.value = eval(display.value);
+            }
+        }
+        catch(error){
+            display.value = "Error";
+        }
+    }
+
+
 
 </script>
 
