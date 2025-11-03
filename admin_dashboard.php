@@ -42,7 +42,7 @@
     <div class="calculator">
         <h1>Calculator</h1>
         <div class="main-calculator">
-            <input type="text" readonly>
+            <input class="display" type="text" readonly>
             <div class="keys">
                 <button onclick="appendToDisplay('+')">+</button>
                 <button onclick="appendToDisplay('7')">7</button>
@@ -64,6 +64,21 @@
         </div>
     </div>
 </body>
+
+<script>
+    const display = document.querySelector('.display');
+    function appendToDisplay(input){
+        display.value += input;
+    }
+    function displayResault(){
+        display.value = eval(display.value);
+    }
+    function clearScreen(){
+        display.value = '';
+    }
+
+</script>
+
 </html>
 
 <?php
