@@ -2,6 +2,25 @@
     session_start();
 ?>
 
+
+<?php
+
+    $userName = $_SESSION['userName'];
+    $role = $_SESSION['role'];
+    if (!empty($userName)){
+        if ($role == 'Admin'){
+            echo '';
+        }else{
+            header("Location: user_dashboard.php");
+        }
+    }else{
+        header("Location: login.php");
+    }
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -4,7 +4,17 @@
 
 <?php
 
-    echo $_SESSION['userName'];
+    $userName = $_SESSION['userName'];
+    $role = $_SESSION['role'];
+    if (!empty($userName)){
+        if ($role == 'User'){
+            echo '';
+        }else{
+            header("Location: admin_dashboard.php");
+        }
+    }else{
+        header("Location: login.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +35,6 @@
 <?php
     if(isset($_POST['logout'])){
         session_destroy();
-        header("Location: login.php");
+        // header("Location: login.php");
     }
 ?>
