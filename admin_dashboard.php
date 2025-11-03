@@ -42,7 +42,7 @@
     <div class="calculator">
         <div class="main-calculator">
             <h1>Calculator</h1>
-            <input class="display" value="gff" type="text" readonly>
+            <input class="display" value="" type="text" readonly>
             <div class="keys">
                 <button onclick="appendToDisplay('+')">+</button>
                 <button onclick="appendToDisplay('7')">7</button>
