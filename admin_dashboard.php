@@ -40,9 +40,9 @@
     </nav>
 
     <div class="calculator">
-        <h1>Calculator</h1>
         <div class="main-calculator">
-            <input class="display" type="text" readonly>
+            <h1>Calculator</h1>
+            <input class="display" value="gff" type="text" readonly>
             <div class="keys">
                 <button onclick="appendToDisplay('+')">+</button>
                 <button onclick="appendToDisplay('7')">7</button>

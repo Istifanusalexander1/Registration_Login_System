@@ -36,10 +36,45 @@ nav{
 
 .calculator{
     border: solid;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;height: 90vh;
 }
 
+.main-calculator{
+    padding: 20px;
+    background: linear-gradient(120deg, #7476f4, #9394e2);
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: #2c2d50;
+}
+input{
+    font-weight: 900;
+    font-size: 30px;
+    padding: 10px;
+    background: none;
+    color: #f0efef;
+    border: #505082 solid;
+    border-radius: 10px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 10px #2c2d50;
+    outline: none;
+    text-align: right;
+    width: 100%;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    gap: 20px;
+}
+button{
+    padding: 10px 15px;
+    font-size: 30px;
+    font-weight: 800;
+    box-shadow: 0 0 10px #f0efef;
+    border: none;
+    background: linear-gradient(120deg, #7476f4, #9394e2);
+    border-radius: 10px;
+    color: #fff;
+}
