@@ -43,22 +43,23 @@
             <h1>Calculator</h1>
             <input class="display" value="" type="text" readonly>
             <div class="keys">
-                <button class="keys-btn" onclick="appendToDisplay('+')">+</button>
+                <button class="keys-btn op" onclick="appendToDisplay('+')">+</button>
                 <button class="keys-btn" onclick="appendToDisplay('7')">7</button>
                 <button class="keys-btn" onclick="appendToDisplay('8')">8</button>
                 <button class="keys-btn" onclick="appendToDisplay('9')">9</button>
-                <button class="keys-btn" onclick="appendToDisplay('-')">-</button>
+                <button class="keys-btn op" onclick="appendToDisplay('-')">-</button>
                 <button class="keys-btn" onclick="appendToDisplay('4')">4</button>
                 <button class="keys-btn" onclick="appendToDisplay('5')">5</button>
                 <button class="keys-btn" onclick="appendToDisplay('6')">6</button>
-                <button class="keys-btn" onclick="appendToDisplay('*')">*</button>
+                <button class="keys-btn op" onclick="appendToDisplay('*')">*</button>
                 <button class="keys-btn" onclick="appendToDisplay('1')">1</button>
                 <button class="keys-btn" onclick="appendToDisplay('2')">2</button>
                 <button class="keys-btn" onclick="appendToDisplay('3')">3</button>
+                <button class="keys-btn op" onclick="appendToDisplay('/')">/</button>
                 <button class="keys-btn" onclick="appendToDisplay('.')">.</button>
                 <button class="keys-btn" onclick="appendToDisplay('0')">0</button>
-                <button class="keys-btn" onclick="displayResault()">=</button>
-                <button class="keys-btn" onclick="clearScreen()">C</button>
+                <button class="keys-btn op" onclick="displayResault()">=</button>
+                <button class="keys-btn op" onclick="clearScreen()">C</button>
             </div>
         </div>
     </div>

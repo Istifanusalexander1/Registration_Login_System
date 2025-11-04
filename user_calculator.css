@@ -91,6 +91,10 @@ input{
     cursor: pointer;
 }
 
+.op{
+    color: #0c0c0c;
+}
+
 .keys-btn:hover{
     background: linear-gradient(120deg, #8587ef, #b5b6f1);
 }
