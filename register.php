@@ -5,9 +5,9 @@
 <?php
     if (!empty($_SESSION['userName'])){
         if ($_SESSION['role'] == "Admin"){
-            header("Location: admin_dashboard.php");
+            header("Location: admin/admin_dashboard.php");
         }else{
-            header("Location: user_dashboard.php");
+            header("Location: user/user_dashboard.php");
         }
     }
 ?>
@@ -59,14 +59,14 @@
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
                 $_SESSION['role'] = $role;
-                header("Location: admin_dashboard.php");
+                header("Location: admin/admin_dashboard.php");
             }elseif ($role == 'User'){
                 $_SESSION['fullName'] = $fullName;
                 $_SESSION['userName'] = $userName;
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
                 $_SESSION['role'] = $role;
-                header("Location: user_dashboard.php");
+                header("Location: user/user_dashboard.php");
             }else{
                 die("Please Kindly Select Role");
             }

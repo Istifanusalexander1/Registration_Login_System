@@ -26,6 +26,10 @@
     justify-content: center;
     background-color: var(--color-gray-500);
     box-shadow: 0 0 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .navigations .logo img{
     width: 140px;
@@ -78,6 +82,10 @@ nav ul li .home:hover{
     align-items: center;
     margin-top: 90px;
 }
+.ab{
+    align-items: center;
+    justify-content: center;
+}
 .hero p{
     font-weight: 500;
     font-size: 25px;
@@ -94,6 +102,7 @@ nav ul li .home:hover{
     width: 750px;
     height: 750px;
     animation: hero 1.5s infinite alternate-reverse ease-in-out;
+    margin-top: 200px;
 }
 
 @keyframes hero {
@@ -116,21 +125,85 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.all-section{
-    width: 90%;
+    padding: 30px;
 }
 
 #sec1{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+    box-shadow: 0 0 10px;
+}
+.section__body{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-    >div{
-        border: solid;
-        margin: 10px 5px;
-    }
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+.section1__title{
+    padding: 0 0 40px 0;
 }
 
-section div{
-    padding: 40px;
+.sec1{
+    border: solid #495057;
+    padding: 20px 30px;
     border-radius: 10px;
+    box-shadow: 0 0 10px;
+    font-size: 20px;
+    aspect-ratio: 4 / 3;
+    box-sizing: border-box;
+}
+
+.book-img{
+    width: 70px;
+    height: 90px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: solid 0.1px #8a929a;
+    outline: solid 1.1px #212529;
+    font-size: 16px;
+    background-color: #e9ecef;
+}
+.form-sub{
+    border-radius: 10px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+.submitform-btn{
+    background-color: #495057;
+    color: #e9ecef;
+    width: 300px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: ease-out 0.3s;
+}
+.submitform-btn:hover{
+    background-color: #6c757d;
+}
+textarea{
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 20px;
+    height: 200px;
+    font-size: 17px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    border: solid 0.1px #8a929a;
+    outline: solid 1.1px #212529;
 }

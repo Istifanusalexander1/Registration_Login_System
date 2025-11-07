@@ -7,13 +7,13 @@
     $userName = $_SESSION['userName'];
     $role = $_SESSION['role'];
     if (!empty($userName)){
-        if ($role == 'User'){
+        if ($role == 'Admin'){
             echo '';
         }else{
-            header("Location: admin_dashboard.php");
+            header("Location: ../user/user_dashboard.php");
         }
     }else{
-        header("Location: login.php");
+        header("Location: ../login.php");
     }
 ?>
 
@@ -25,18 +25,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome User</title>
-    <link rel="stylesheet" href="user_calculator.css">
+    <title>Welcome Admin</title>
+    <link rel="stylesheet" href="admin_calculator.css">
 </head>
 <body>
     <nav>
-        <h1>Hi <?php echo $_SESSION['userName']; ?>, Welcome <br> This is User Dashboard!</h1>
-        <form action="admin_dashboard.php" method="post">
+        <h1>Hi <?php echo $_SESSION['userName']; ?>, Welcome <br> This is Admin Dashboard!</h1>
+        <form action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
             <div class="div-logout-btn">
                 <button class="logout-btn" type="submit" name="logout" onclick="confirm('Are you sure you want to exit?')">Logout</button>
             </div>
         </form>
-        <a href="user_home.php" class="logout-btn">Go to home</a>
     </nav>
 
     <div class="calculator">
@@ -103,8 +102,10 @@
 </html>
 
 <?php
-    if(isset($_POST['logout'])){
-        session_destroy();
-        header("Location: login.php");
+    if ($_SERVER["PHP_SELF"]){
+        if(isset($_POST['logout'])){
+            session_destroy();
+            header("Location: ../login.php");
+        }
     }
 ?>
