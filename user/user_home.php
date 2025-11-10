@@ -27,36 +27,41 @@
     <title>Home - <?php echo $_SESSION['userName']; ?></title>
 
     <link rel="stylesheet" href="user_style.css">
+    <script defer src="app.js"></script>
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
 
 </head>
-<body>
-
+<body class="open">
+    
     <div class="navigations">
         <div class="logo">
-        <img src="../assets/chat.svg" alt="">
-    </div>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="#hero" class="home"><img src="assets/home.svg" alt=""> Home</a>
-            </li>
-            <li>
-                <a href="#" class="profile"><img src="assets/dashboard.svg" alt=""> Dashboard</a>
-            </li>
-            <li>
-                <a href="#" class="profile"><img src="assets/profile.svg" alt=""> Profile</a>
-            </li>
-            <li>
-                <a href="#" class="abouts"><img src="assets/about.svg" alt=""> About</a>
-            </li>
-            <li>
-                <a href="#" class="contact"><img src="assets/contact.svg" alt=""> Contacts</a>
-            </li>
-        </ul>
-    </nav>
+            <img class="logoImg" src="../assets/chat.svg" alt="">
+            <img class="openSideBar" onclick="openSideBar()" src="../assets/open-sidebar.svg" alt="">
+        </div>
+        
+        <label onclick="openSideBar()" class="label"></label>
+        <div></div>
+        <nav>
+            <img class="openSideBar" onclick="openSideBar()" src="../assets/close-sidebar.svg" alt="">
+            <ul>
+                <li>
+                    <a href="#hero" class="home" onclick="openSideBar()"><img src="assets/home.svg" alt=""> Home</a>
+                </li>
+                <li>
+                    <a href="#" class="profile" onclick="openSideBar()"><img src="assets/dashboard.svg" alt=""> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#" class="profile" onclick="openSideBar()"><img src="assets/profile.svg" alt=""> Profile</a>
+                </li>
+                <li>
+                    <a href="#" class="abouts" onclick="openSideBar()"><img src="assets/about.svg" alt=""> About</a>
+                </li>
+                <li>
+                    <a href="#" class="contact" onclick="openSideBar()"><img src="assets/contact.svg" alt=""> Contacts</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
 
@@ -67,7 +72,7 @@
                  <h1>ISTIFANUS ALEXANDER</h1>
                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit vero saepe voluptates at! Facilis magni rem voluptates dolore ipsum optio adipisci, sed, magnam harum ex illo corrupti hic minima. A.</p>
             </div>
-            <img src="../assets/hero.png" alt="Hero image">
+            <img class="heroImg" src="../assets/hero.png" alt="Hero image">
 
         </section>
 
@@ -131,19 +136,21 @@
 
 
              <!-- THIS IS THE SECTION 3 -->
-             <section id="sec1" class="form-sub">
-                <div class="section1__title">
-                    <h1>Contacts Us</h1>
-                </div>
-                <form action="<?php $_SELF["PHP_SELF"] ?>" method="post">
-                    <input type="text" name="cName" placeholder="Full Name">
-                    <input type="number" name="cNumber" placeholder="Phone Number">
-                    <input type="text" name="cEmail" placeholder="Email">
-                    <textarea name="cText" placeholder="Enter Your Message"></textarea>
-                    <input class="submitform-btn" type="submit" value="Submit" name="submit">
-                </form>
-                </div>
-             </section>
+            <div class="form-sec">
+                <section id="sec1" class="form-sub">
+                    <div class="section1__title">
+                        <h1>CONTACT US</h1>
+                    </div>
+                    <form action="<?php $_SELF["PHP_SELF"] ?>" method="post">
+                        <input type="text" name="cName" placeholder="Full Name">
+                        <input type="number" name="cNumber" placeholder="Phone Number">
+                        <input type="text" name="cEmail" placeholder="Email">
+                        <textarea name="cText" placeholder="Enter Your Message"></textarea>
+                        <input class="submitform-btn" type="submit" value="Submit" name="submit">
+                    </form>
+                    </div>
+                </section>
+            </div>
 
 
              <!-- THIS IS THE SECTION 1 -->

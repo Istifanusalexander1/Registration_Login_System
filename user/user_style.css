@@ -27,6 +27,7 @@
     background-color: var(--color-gray-500);
     box-shadow: 0 0 10px;
     position: sticky;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -206,4 +207,100 @@ textarea{
     border-radius: 5px;
     border: solid 0.1px #8a929a;
     outline: solid 1.1px #212529;
+}
+
+@media (max-width: 470px) {
+    .navigations{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .navigations .logo{
+        >.logoImg{
+            width: 90px;
+        }
+        >.openSideBar{
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            aspect-ratio: 0;
+            margin-top: 45px;
+        }
+    }
+    .navigations .logo{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+    }
+    nav{
+        display: none;
+    }
+    .open nav{
+        /* border: solid; */
+        padding: 40px 0 0 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--color-gray-500);
+        box-shadow: 0 0 10px ;
+        z-index: 2;
+        >img{
+            width: 30px;
+            height: fit-content;
+        }
+        >ul{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            align-items: flex-start;
+        }
+    }
+    .label{
+        width: 100%;
+        height: 100vh;
+        background: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 1;
+    }
+    .form-sub{
+        width: 400px;
+    }
+    form{
+        width: auto;
+    }
+    .hero{
+        >.ab{
+            margin-top: 360px;
+            padding: 20px;
+            >h1{
+                font-size: 28px;
+            }
+            >p{
+                width: 100%;
+            }
+        }
+        >.heroImg{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 150px;
+        }
+    }
+}
+
+
+
+@media (min-width: 980px){
+    .openSideBar{
+        display: none;
+    }
 }

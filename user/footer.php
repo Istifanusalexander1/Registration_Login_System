@@ -42,6 +42,12 @@
         text-align: center;
         justify-content: center;
     }
+    @media (max-width: 470px) {
+        .links{
+            padding: 5px;
+            width: 50%;
+        }
+    }
 </style>
 <div class="footer">
     <footer>
