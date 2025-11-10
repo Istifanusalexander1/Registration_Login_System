@@ -49,7 +49,7 @@
                     <a href="#hero" class="home" onclick="openSideBar()"><img src="assets/home.svg" alt=""> Home</a>
                 </li>
                 <li>
-                    <a href="#" class="profile" onclick="openSideBar()"><img src="assets/dashboard.svg" alt=""> Dashboard</a>
+                    <a href="user_dashboard.php" class="profile" onclick="openSideBar()"><img src="assets/dashboard.svg" alt=""> Dashboard</a>
                 </li>
                 <li>
                     <a href="#" class="profile" onclick="openSideBar()"><img src="assets/profile.svg" alt=""> Profile</a>
