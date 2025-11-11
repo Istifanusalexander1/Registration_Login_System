@@ -26,13 +26,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - <?php echo $_SESSION['userName']; ?></title>
 
-    <link rel="stylesheet" href="user_style.css">
+    <link rel="stylesheet" href="users_style.css">
     <script defer src="app.js"></script>
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
 
 </head>
-<body class="open">
+<body class="">
     
     <div class="navigations">
         <div class="logo">
@@ -41,7 +41,6 @@
         </div>
         
         <label onclick="openSideBar()" class="label"></label>
-        <div></div>
         <nav>
             <img class="openSideBar" onclick="openSideBar()" src="../assets/close-sidebar.svg" alt="">
             <ul>
