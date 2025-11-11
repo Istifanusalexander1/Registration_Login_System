@@ -214,7 +214,7 @@ textarea{
     outline: solid 1.1px #212529;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 692px) {
     .navigations{
         width: 100%;
         display: flex;
@@ -315,6 +315,7 @@ textarea{
         }
     }
 }
+
 
 
 @media (min-width: 471px) and (max-width: 1537px) {
