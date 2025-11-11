@@ -51,7 +51,7 @@
                     <a href="user_dashboard.php" class="profile" onclick="openSideBar()"><img src="../assets/dashboard.svg" alt=""> Dashboard</a>
                 </li>
                 <li>
-                    <a href="#" class="profile" onclick="openSideBar()"><img src="../assets/profile.svg" alt=""> Profile</a>
+                    <a href="user_profile.php" class="profile" onclick="openSideBar()"><img src="../assets/profile.svg" alt=""> Profile</a>
                 </li>
                 <li>
                     <a href="#" class="abouts" onclick="openSideBar()"><img src="../assets/about.svg" alt=""> About</a>
