@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $_SESSION['userName']; ?> - Profile</title>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
     <style>
         body{
             background-color: #cacacac6;
@@ -59,6 +60,20 @@
             font-weight: 800;
             font-family: sans-serif;
         }
+        @media (max-width: 470px) {
+            .userProfile{
+                width: 200px;
+                height: 200px;
+            }
+            .info{
+                font-size: 12px;
+            }
+            button{
+                width: 140px;
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -72,16 +87,12 @@
             <div class="userName">
                 <p>Username: <?php echo $_SESSION['userName']; ?> </p>
             </div>
-            <!-- <div class="number">
-                <p>Phone Number: <?php echo $_SESSION['number']; ?> </p>
-            </div> -->
             <div class="email">
                 <p>Email: <?php echo $_SESSION['email']; ?> </p>
             </div>
         </div>
-        <button>Change Password</button>
+        <button onclick="Swal.fire('Success!', 'Password changed!', 'success')">Change Password</button>
         <button onclick="history.back()"> ⬅ Back</button>
     </div>
 </body>
 </html>
-https://www.symbolspy.com/arrow-symbol.html
